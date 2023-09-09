@@ -39,7 +39,7 @@ function deleteLast() {
 
 function changeSign() {
     const dispValue = document.getElementById('display').value;
-    if (currentText.charAt(0) === '-') {
+    if (dispValue.charAt(0) === '-') {
         document.getElementById('display').value = dispValue.slice(1).toFixed(3);
     } else {
         document.getElementById('display').value = '-' + dispValue;
