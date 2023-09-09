@@ -25,7 +25,6 @@ function squareRoot() {
         if (number >= 0) {
             const result = Math.sqrt(number);
             document.getElementById('display').value = result;
-            dispValue = result;
         } else {
             document.getElementById('display').value = 'Error';
         }
@@ -40,7 +39,7 @@ function deleteLast() {
 function changeSign() {
     const dispValue = document.getElementById('display').value;
     if (dispValue.charAt(0) === '-') {
-        document.getElementById('display').value = dispValue.slice(1).toFixed(3);
+        document.getElementById('display').value = dispValue.slice(1);
     } else {
         document.getElementById('display').value = '-' + dispValue;
     }
